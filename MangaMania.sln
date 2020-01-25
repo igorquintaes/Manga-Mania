@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaMania", "MangaMania\MangaMania.csproj", "{B2276703-63FD-4BFE-8C5C-92F8675B1872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaMania.IntegrationTests", "MangaMania.IntegrationTests\MangaMania.IntegrationTests.csproj", "{438AC69E-3408-4C9E-806A-3C0D3411AFFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaMania.Tests.Shared", "MangaMania.Tests.Shared\MangaMania.Tests.Shared.csproj", "{B9BA12C0-B110-414B-A5DB-ED3455A87EF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2276703-63FD-4BFE-8C5C-92F8675B1872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2276703-63FD-4BFE-8C5C-92F8675B1872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2276703-63FD-4BFE-8C5C-92F8675B1872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2276703-63FD-4BFE-8C5C-92F8675B1872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{438AC69E-3408-4C9E-806A-3C0D3411AFFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{438AC69E-3408-4C9E-806A-3C0D3411AFFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{438AC69E-3408-4C9E-806A-3C0D3411AFFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{438AC69E-3408-4C9E-806A-3C0D3411AFFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9BA12C0-B110-414B-A5DB-ED3455A87EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9BA12C0-B110-414B-A5DB-ED3455A87EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9BA12C0-B110-414B-A5DB-ED3455A87EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9BA12C0-B110-414B-A5DB-ED3455A87EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE9D2044-BABC-48F0-803C-CA9A954E60DE}
+	EndGlobalSection
+EndGlobal

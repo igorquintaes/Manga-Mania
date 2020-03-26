@@ -1,0 +1,331 @@
+@import 'variables.sass'
+
+*, :after, :before
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+a
+  color: #1f1f1f
+  text-decoration: none 
+  outline: none
+  -webkit-transition: all .3s ease-in-out
+  -moz-transition: all .3s ease-in-out
+  -ms-transition: all .3s ease-in-out
+  -o-transition: all .3s ease-in-out
+  transition: all .3s ease-in-out
+  background-color: transparent  
+  &:focus
+    outline: 5px auto -webkit-focus-ring-color
+    outline-offset: -2px
+
+img
+  border: 0    
+
+ul
+  margin-top: 0
+  margin-bottom: 10px
+
+.container-fluid
+  padding-right: 15px
+  padding-left: 15px
+  margin-right: auto
+  margin-left: auto
+
+.container-fluid, .nav, .navbar-collapse, .navbar-header, nav
+  &:after, &:before
+    display: table
+    content: " "
+  &:after
+    clear: both
+
+ul, li
+  margin: 0px
+  padding: 0px
+  list-style: none
+
+header
+  > .top-bar
+    background: #393939
+    .left-top
+      padding: 3px 0px
+      .email-box
+        display: inline-block
+        margin-right: 20px
+        a
+          color: #ffffff
+          font-size: 16px
+          &:hover
+            color: $primary
+          i
+            padding: 0px 5px
+    .right-top .social-box
+      float: right
+      ul li
+        display: inline-block
+        padding-left: 10px
+        a
+          color: #ffffff
+          font-size: 20px
+          &:hover
+            color: $primary
+  > .bot-bar
+    background-color: #ffffff
+    display: block
+    left: 0
+    padding: 20px 40px !important
+    position: relative
+    right: 0
+    top: 0
+    width: 100%
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3)
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3)
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3)
+    z-index: 111
+    nav
+      background-color: transparent
+      border: 0
+      border-radius: 0px
+      position: relative
+      min-height: 50px
+      margin-bottom: 20px
+    .navbar-nav, nav
+      margin-bottom: 0 !important      
+    .navbar-header, .navbar-collapse
+      margin-right: -15px
+      margin-left: -15px
+    .navbar-header
+      .navbar-brand
+        padding: 2px 15px 0 15px
+        height: auto
+        color: #777        
+        float: left
+        height: 50px
+        padding: 15px 15px
+        font-size: 18px
+        line-height: 20px
+        &:focus, &:hover
+          color: #5e5e5e
+          background-color: transparent
+          text-decoration: none
+        > img
+          display: block          
+          width: 100px
+          margin-top: -28px
+      .navbar-toggle
+        position: relative
+        float: right
+        padding: 10px 10px
+        background-color: transparent
+        background-image: none
+        border: 1px solid transparent
+        border-radius: 4px        
+        margin-top: 5px
+        font: inherit
+        cursor: pointer          
+        border-color: #ddd
+        &:focus, &:hover
+          background-color: #ddd
+        &::-moz-focus-inner
+          padding: 0
+          border: 0
+        &:focus
+          outline: 0
+        .sr-only
+          position: absolute
+          width: 1px
+          height: 1px
+          padding: 0
+          margin: -1px
+          overflow: hidden
+          clip: rect(0, 0, 0, 0)
+          border: 0
+        .icon-bar
+          background-color: #888
+          display: block
+          width: 22px
+          height: 2px
+          border-radius: 1px
+          + .icon-bar
+            margin-top: 4px
+    .navbar-collapse
+      padding-right: 15px
+      padding-left: 15px
+      .nav
+        padding-left: 0
+        margin-bottom: 0
+        list-style: none
+        margin: 5px -15px
+        > li
+          position: relative
+          display: block
+          margin-top: 2px
+          margin: 0px 10px
+          -webkit-transition: all .3s ease-in-out
+          -moz-transition: all .3s ease-in-out
+          -ms-transition: all .3s ease-in-out
+          -o-transition: all .3s ease-in-out
+          transition: all .3s ease-in-out
+          > a
+            position: relative
+            display: block
+            border-radius: 0
+            font-size: 15px
+            font-style: normal
+            text-transform: capitalize
+            background-color: transparent
+            color: #333333
+            padding: 15px 15px
+            padding-bottom: 10px
+            padding-top: 10px
+            line-height: 20px
+            &:hover, &:focus
+              color: #ffffff
+              box-shadow: 0 10px 20px 0 rgba(5, 16, 44, 0.15)
+              border-radius: 25px 0px 25px 0px
+              background: $primary
+            &.active
+              color: #ffffff
+              box-shadow: 0 10px 20px 0 rgba(5, 16, 44, 0.15)
+              border-radius: 25px 0px 25px 0px
+              background: $primary
+
+@media (max-width: 1158px)
+  .bot-bar .navbar-default .navbar-nav > li > a
+    font-size: 14px
+
+  .navbar-nav li
+    margin: 0px 5px
+
+@media (max-width: 1120px)
+  .navbar-nav li
+    margin: 0px 5px
+
+  .bot-bar
+    .navbar-default .navbar-nav > li a
+      padding: 15px 10px
+
+    padding: 20px 30px !important
+
+@media (max-width: 1000px)
+  .bot-bar
+    background-color: #ffffff
+    display: block
+    left: 0
+    padding: 20px 0px !important
+    position: relative
+    right: 0
+    top: 0
+    width: 100%
+    z-index: 111
+
+  .navbar-default
+    .navbar-toggle
+      border-color: #393939
+      border-radius: 15px 0px 15px 0px
+
+      &:hover, &:focus
+        border-color: $primary
+        background-color: $primary
+
+    .navbar-collapse
+      border-color: transparent
+
+  .navbar-header
+    float: none
+
+  .navbar-right
+    float: none !important
+
+  .navbar-toggle
+    display: block
+
+  .navbar-collapse
+    border-top: 1px solid transparent
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1)
+
+    &.collapse
+      display: none !important
+
+  .navbar-nav
+    float: none !important
+    margin-top: 7.5px
+
+    > li
+      float: none
+
+      > a
+        padding-top: 10px
+        padding-bottom: 10px
+
+  .bot-bar .navbar-default .navbar-nav > li a
+    padding: 10px 20px
+
+  .navbar-default .navbar-toggle .icon-bar
+    background-color: #ffffff
+
+@media (max-width: 1200px)
+  .bot-bar 
+  .container-fluid
+    width: 100%
+    padding: 0 15px
+  .navbar-nav li
+    margin: 0px 5px
+  .bot-bar
+    padding: 20px 20px
+    .navbar-brand
+      padding-right: 0
+
+@media (max-width: 768px)  
+  .bot-bar
+    padding-left: 15px
+    padding-right: 15px
+  .social-box
+    text-align: center
+  .navbar-default .navbar-toggle .icon-bar
+    background-color: #ffffff
+
+@media (min-width: 768px)  
+  .col-md
+    float: left
+    width: 50%
+  .navbar-toggle
+    display: none
+  .navbar
+    border-radius: 4px
+    > .container-fluid .navbar-brand
+      margin-left: -15px  
+  .navbar-collapse
+    width: auto
+    border-top: 0
+    -webkit-box-shadow: none
+    box-shadow: none
+    &.collapse
+      display: block !important
+      height: auto !important
+      padding-bottom: 0
+      overflow: visible !important
+  .navbar-header
+    float: left
+  .container-fluid >
+    .navbar-collapse, .navbar-header
+      margin-right: 0
+      margin-left: 0      
+  .navbar-right
+    float: right !important
+    margin-right: -15px
+  .navbar-nav
+    float: left
+    margin: 0
+    > li
+      float: left
+      > a
+        padding-top: 15px
+        padding-bottom: 15px
+
+@media (max-width: 600px)
+  .left-top
+    text-align: center
+  .social-box
+    float: none !important
+    text-align: center    

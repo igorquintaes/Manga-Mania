@@ -25,19 +25,17 @@
         </div>
     </div>
     <div class="bot-bar">
-        <nav class="navbar">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <fa-icon [icon]="faBars" (click)="toggleNavMenu()" class="navbar-toggle" aria-hidden="true"></fa-icon>
-                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="image"></a>
-                </div>
-                <div [style.display]="isNavMenuOpened ? 'block' : 'none'" id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href="about-us.html">Mangas</a></li>
-                        <li><a href="services.html">Scanlators</a></li>
-                    </ul>
-                </div>
+        <nav class="container-fluid">
+            <div class="navbar-header">
+                <fa-icon [icon]="faBars" (click)="toggleNavMenu()" class="navbar-toggle" aria-hidden="true"></fa-icon>
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="image"></a>
+            </div>
+            <div [style.display]="isNavMenuOpened ? 'block' : 'none'" id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about-us.html">Mangas</a></li>
+                    <li><a href="services.html">Scanlators</a></li>
+                </ul>
             </div>
         </nav>
     </div>

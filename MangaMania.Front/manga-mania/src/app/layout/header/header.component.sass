@@ -121,6 +121,7 @@ header
         border: 1px solid transparent
         border-radius: 4px        
         margin-top: 5px
+        margin-right: 15px
         font: inherit
         cursor: pointer          
         border-color: #ddd
@@ -191,7 +192,7 @@ header
               background: $primary
 
 @media (max-width: 1158px)
-  .bot-bar .navbar-default .navbar-nav > li > a
+  .bot-bar nav .navbar-nav > li > a
     font-size: 14px
 
   .navbar-nav li
@@ -202,67 +203,72 @@ header
     margin: 0px 5px
 
   .bot-bar
-    .navbar-default .navbar-nav > li a
+    nav .navbar-nav > li a
       padding: 15px 10px
 
     padding: 20px 30px !important
+    
+@media (min-width: 1000px)
+  .navbar-toggle
+    display: none
+  .navbar-collapse
+    &.collapse
+      display: block !important
 
 @media (max-width: 1000px)
-  .bot-bar
-    background-color: #ffffff
-    display: block
-    left: 0
-    padding: 20px 0px !important
-    position: relative
-    right: 0
-    top: 0
-    width: 100%
-    z-index: 111
+  header
+    .bot-bar
+      background-color: #ffffff
+      display: block
+      left: 0
+      padding: 20px 0px !important
+      position: relative
+      right: 0
+      top: 0
+      width: 100%
+      z-index: 111
 
-  .navbar-default
-    .navbar-toggle
-      border-color: #393939
-      border-radius: 15px 0px 15px 0px
+    nav
+      .navbar-toggle
+        border-color: #393939
+        border-radius: 15px 0px 15px 0px
 
-      &:hover, &:focus
-        border-color: $primary
-        background-color: $primary
+        &:hover, &:focus
+          border-color: $primary
+          background-color: $primary
 
-    .navbar-collapse
-      border-color: transparent
+      .navbar-collapse
+        border-color: transparent
 
-  .navbar-header
-    float: none
-
-  .navbar-right
-    float: none !important
-
-  .navbar-toggle
-    display: block
-
-  .navbar-collapse
-    border-top: 1px solid transparent
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1)
-
-    &.collapse
-      display: none !important
-
-  .navbar-nav
-    float: none !important
-    margin-top: 7.5px
-
-    > li
+    .navbar-header
       float: none
 
-      > a
-        padding-top: 10px
-        padding-bottom: 10px
+    .navbar-right
+      float: none !important
 
-  .bot-bar .navbar-default .navbar-nav > li a
-    padding: 10px 20px
+    .navbar-toggle
+      display: block
 
-  .navbar-default .navbar-toggle .icon-bar
-    background-color: #ffffff
+    .navbar-collapse
+      border-top: 1px solid transparent
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1)
+      display: none
+
+    .navbar-nav
+      float: none !important
+      margin: 25px -15px !important
+      > li
+        float: none
+
+        > a
+          padding-top: 10px
+          padding-bottom: 10px
+
+    .bot-bar nav .navbar-nav > li a
+      padding: 10px 20px
+
+    nav .navbar-toggle .icon-bar
+      background-color: #ffffff
 
 @media (max-width: 1200px)
   .bot-bar 
@@ -282,26 +288,21 @@ header
     padding-right: 15px
   .social-box
     text-align: center
-  .navbar-default .navbar-toggle .icon-bar
+  nav .navbar-toggle .icon-bar
     background-color: #ffffff
 
 @media (min-width: 768px)  
   .col-md
     float: left
     width: 50%
-  .navbar-toggle
-    display: none
-  .navbar
+  nav
     border-radius: 4px
-    > .container-fluid .navbar-brand
-      margin-left: -15px  
   .navbar-collapse
     width: auto
     border-top: 0
     -webkit-box-shadow: none
     box-shadow: none
     &.collapse
-      display: block !important
       height: auto !important
       padding-bottom: 0
       overflow: visible !important

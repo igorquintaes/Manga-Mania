@@ -8,6 +8,7 @@ import { faRssSquare, faBars } from '@fortawesome/free-solid-svg-icons'
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.sass']
 })
+
 export class HeaderComponent implements OnInit {
   faFacebookSquare = faFacebookSquare
   faInstagramSquare = faInstagramSquare
@@ -15,9 +16,13 @@ export class HeaderComponent implements OnInit {
   faRssSquare = faRssSquare
   faBars = faBars
 
-  constructor() { }
+  isNavMenuOpened : boolean;
 
   ngOnInit() {
+    this.isNavMenuOpened = false;
   }
 
+  toggleNavMenu() {
+    this.isNavMenuOpened = !this.isNavMenuOpened;
+  }
 }
